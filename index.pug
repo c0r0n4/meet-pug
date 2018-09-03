@@ -1,0 +1,44 @@
+-
+    var peopleList = [
+        {
+            name: 'Marian',
+            age: 36
+        },
+        {
+            name: 'Grace',
+            age: 31
+        },
+        {
+            name: 'Razvan',
+            age: 25
+        },
+        {
+            name: 'Maya',
+            age: 4
+        },
+    ];
+
+h1 hello!?
+//- table
+//-     thead
+//-         tr
+//-             td Name
+//-             td Age
+//-     tbody
+//-         tr
+//-             td Marian
+//-             td 36
+
+table
+    thead
+        tr
+            td Name
+            td Age
+    tbody
+        //- either one of the below will do
+        //- for people in peopleList
+        each people in peopleList
+            tr
+                //- td=people.name
+                td !! #{people.name}
+                td=people.age
